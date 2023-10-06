@@ -48,17 +48,17 @@
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
     {#each useCases as useCase (useCase.id)}
-        <div class="border rounded-lg overflow-hidden shadow-md bg-white">
-            <img class="w-full h-48 object-cover" src={useCase.image} alt={useCase.title}>
-            <div class="p-4">
-                <h2 class="text-xl font-semibold mb-2">{useCase.title}</h2>
-                <div class="mb-3">
-                    {#each useCase.tags as tag}
-                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{tag}</span>
-                    {/each}
-                </div>
-                <p class="text-gray-600">{useCase.description}</p>
+    <div class="transition-transform transform hover:scale-105 border rounded-lg overflow-hidden shadow-md bg-white hover:shadow-lg cursor-pointer">
+        <img class="w-full h-48 object-cover" src={useCase.image} alt={useCase.title}>
+        <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">{useCase.title}</h2>
+            <div class="mb-3">
+                {#each useCase.tags as tag}
+                    <span class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-800 mr-2 mb-2">{tag}</span>
+                {/each}
             </div>
+            <p class="text-gray-700">{useCase.description}</p>
         </div>
+    </div>
     {/each}
 </div>

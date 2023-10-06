@@ -1,6 +1,25 @@
 export const siteMap = [
     {
         name: 'Home',
+        link: '/'
+    },
+    {
+        name: 'AI Basics',
+        link: '/ai-basics'
+    },
+    {
+        name: 'AI in Philanthropy',
+        link: '/ai-in-philanthropy'
+    },
+    {
+        name: 'AI Ethics',
+        link: '/ai-ethics'
+    }
+]
+
+export const siteMap1 = [
+    {
+        name: 'Home',
         link: '/home',
         subpages: [
             { name: 'Welcome & Introduction', link: '/home/welcome-introduction', subpages: [] },
