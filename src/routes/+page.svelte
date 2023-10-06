@@ -1,7 +1,18 @@
 <script>
 	import SiteMap from "$lib/components/SiteMap.svelte";
+	import TellAboutYourselfForm from "../lib/components/TellAboutYourselfForm.svelte";
+	import UseCases from "../lib/components/UseCases.svelte";
 </script>
 
-<h1>AI Roadmap</h1>
+
+	<!-- <div class="mx-auto p-4">
+		<h1 class="text-2xl font-semibold">TITLE</h1>
+	</div> -->
+
 
 <!-- <SiteMap /> -->
+<div class="mb-10">
+<TellAboutYourselfForm  />
+</div>
+<UseCases />
+
