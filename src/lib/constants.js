@@ -3,18 +3,18 @@ export const siteMap = [
         name: 'Home',
         link: '/'
     },
-    {
-        name: 'AI Basics',
-        link: '/ai-basics'
-    },
+    // {
+    //     name: 'AI Basics',
+    //     link: '/ai-basics'
+    // },
     {
         name: 'Roadmap',
         link: '/roadmap'
     },
-    {
-        name: 'AI Ethics',
-        link: '/ai-ethics'
-    }
+    // {
+    //     name: 'AI Ethics',
+    //     link: '/ai-ethics'
+    // }
 ]
 
 export const siteMap1 = [
