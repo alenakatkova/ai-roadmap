@@ -8,8 +8,8 @@ export const siteMap = [
         link: '/ai-basics'
     },
     {
-        name: 'AI in Philanthropy',
-        link: '/ai-in-philanthropy'
+        name: 'Roadmap',
+        link: '/roadmap'
     },
     {
         name: 'AI Ethics',
