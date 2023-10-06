@@ -1,5 +1,5 @@
 <script>
-    import { siteMap } from '../constants';
+	import { siteMap } from '../constants';
 </script>
 
 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
