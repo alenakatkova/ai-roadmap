@@ -11,6 +11,14 @@ export const siteMap = [
         name: 'Roadmap',
         link: '/roadmap'
     },
+    {
+        name: 'Need Help?',
+        link: '/need-help'
+    },
+    {
+        name: 'Want to Contribute?',
+        link: '/want-to-contribute'
+    }
     // {
     //     name: 'AI Ethics',
     //     link: '/ai-ethics'

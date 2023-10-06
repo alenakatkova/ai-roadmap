@@ -86,6 +86,8 @@
     }
 </style>
 
+
+
 <div class="roadmap">
     {#each roadmap as { title, content }, index}
         <div class="step bg-white p-4 m-3 w-11/12 md:w-3/4 lg:w-1/2 border border-gray-300 rounded-lg shadow-md relative">
