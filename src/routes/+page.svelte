@@ -1,9 +1,14 @@
 <script>
-	import SiteMap from '$lib/components/SiteMap.svelte';
 	import TellAboutYourselfForm from '../lib/components/TellAboutYourselfForm.svelte';
 	import SuccessStories from '../lib/components/SuccessStories.svelte';
 	import Tools from '../lib/components/Tools.svelte';
 	import Learning from '../lib/components/Learning.svelte';
+
+	let isDescriptionSubmitted = false;
+	function handleDescriptionSubmit(event) {
+		isDescriptionSubmitted = true;
+		console.log(event.detail.text);
+	}
 </script>
 
 <div class="flex">
@@ -35,26 +40,21 @@
 	</div>
 </div>
 
-<TellAboutYourselfForm />
-<!-- <div class="flex col-2">
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-		
-	</div>
-	<TellAboutYourselfForm />
-</div> -->
+<TellAboutYourselfForm on:describe={handleDescriptionSubmit} />
 
-
-<!-- <h2 class="text-xl font-medium mb-4 mt-8">Success stories, tools, and learning paths</h2> -->
 <div class="flex justify-between mt-6">
-<div class="flex-1"><SuccessStories /></div>
-<div class="flex-1"><Tools /></div>
-<div class="flex-1"><Learning /></div>
+	<div class="flex-1"><SuccessStories shouldFilter={isDescriptionSubmitted}/></div>
+	<div class="flex-1"><Tools shouldFilter={isDescriptionSubmitted}/></div>
+	<div class="flex-1"><Learning shouldFilter={isDescriptionSubmitted} /></div>
 </div>
 
-<div class="flex justify-end mt-2">
-    <a href="/roadmap" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-        Go to your personalized roadmap
-    </a>
-</div>
-
+{#if isDescriptionSubmitted}
+	<div class="flex justify-end mt-2">
+		<a
+			href="/roadmap"
+			class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+		>
+			Go to your personalized roadmap
+		</a>
+	</div>
+{/if}

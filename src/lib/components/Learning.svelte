@@ -1,63 +1,54 @@
 <script>
-	import img1 from '../images/story_01.jpg';
-	import img2 from '../images/story_02.jpg';
-	import img3 from '../images/story_03.jpg';
-	import img4 from '../images/story_04.jpg';
-	import img5 from '../images/story_05.jpg';
-	import img6 from '../images/story_06.jpg';
+	// import img1 from '../images/story_01.jpg';
+	// import img2 from '../images/story_02.jpg';
+	// import img3 from '../images/story_03.jpg';
+	// import img4 from '../images/story_04.jpg';
+	// import img5 from '../images/story_05.jpg';
+	// import img6 from '../images/story_06.jpg';
+
+    export let shouldFilter = false;
+
 	const learnings = [
 		{
 			id: 1,
 			// image: img1, // Image placeholder
-			title: 'AI Strategy Workshops',
+			title: 'AI Strategy Workshops'
 			// tags: [],
 			// description: ''
 		},
 		{
-			id: 2,
+			id: 3,
 			// image: img1, // Image placeholder
-			title: 'Collaborative Learning',
+			title: 'AI and Global Challenges'
 			// tags: [],
 			// description: ''
-		},
-        // {
-		// 	id: 3,
-		// 	// image: img1, // Image placeholder
-		// 	title: 'AI and Global Challenges',
-		// 	// tags: [],
-		// 	// description: ''
-		// },
+		}
 	];
 
-    const learningsFiltered = [
+	const learningsFiltered = [
 		{
 			id: 1,
 			// image: img1, // Image placeholder
-			title: 'AI Strategy Workshops',
+			title: 'AI Strategy Workshops'
 			// tags: [],
 			// description: ''
 		},
 		{
 			id: 2,
 			// image: img1, // Image placeholder
-			title: 'Collaborative Learning',
+			title: 'Collaborative Learning'
 			// tags: [],
 			// description: ''
-		},
-        {
-			id: 3,
-			// image: img1, // Image placeholder
-			title: 'AI and Global Challenges',
-			// tags: [],
-			// description: ''
-		},
+		}
 	];
+
+    $: displayedLearnings = shouldFilter ? learningsFiltered : learnings;
+
 </script>
 
-<!-- <div class="grid grid-cols-1 gap-6"> -->
-    <div class="flex flex-col space-y-4">
-    <h2 class="text-l font-medium">Learning</h2>
-	{#each learnings as learning (learning.id)}
+<div class="flex flex-col space-y-4">
+	<h2 class="text-l font-medium">Learning</h2>
+	{#each displayedLearnings as learning (learning.id)}
 		<a
 			href="/success-stories/ai-streamlines-paperwork"
 			class="flex items-center h-28 transition-transform transform hover:scale-105 border rounded-lg overflow-hidden shadow-md bg-white hover:shadow-lg cursor-pointer"

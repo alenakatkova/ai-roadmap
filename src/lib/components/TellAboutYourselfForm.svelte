@@ -2,18 +2,16 @@
 	let description = '';
 
 	import { createEventDispatcher } from 'svelte';
-
+	const dispatch = createEventDispatcher();
 	function handleSubmit() {
-		dispatch('filtersChanged', {
-			filters: selectedFilters
+		dispatch('describe', {
+			text: description
 		});
 	}
-
-	
 </script>
 
 <div class="w-full mt-6">
-	<h2 for="description" class="block text-xl mb-4 font-medium ">Tell us why are you here:</h2>
+	<h2 for="description" class="block text-xl mb-4 font-medium">Tell us why are you here:</h2>
 	<form on:submit|preventDefault={handleSubmit} class="space-y-4">
 		<div class="flex">
 			<textarea
