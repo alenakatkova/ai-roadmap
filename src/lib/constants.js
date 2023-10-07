@@ -13,11 +13,11 @@ export const siteMap = [
 	},
 	{
 		name: 'Contribute',
-		link: '/contribute'
+		link: '/'
 	},
 	{
 		name: 'About Us',
-		link: '/about-us'
+		link: '/'
 	},
 	
 	// {
