@@ -3,13 +3,37 @@
 	import { siteMap } from '../lib/constants';
 </script>
 
+<style>
+    /* Light gray gradient background */
+    nav {
+		background-color: white;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	a {
+    color: #8D6E63; /* A deep golden brown */
+    transition: all 0.3s ease;
+	}
+
+	a:hover {
+		color: #473a27; /* A light gold for hover effect */
+		background-color: #FFF8E1;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	}
+
+	a.active {
+		border-bottom: 2px solid #8D6E63;
+		padding-bottom: 2px;
+	}
+</style>
+
 <div>
-	<nav class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white shadow-md">
+	<nav class="bg-white text-purple-600 shadow-md">
 		<div class="container mx-auto p-2">
 			<div class="flex justify-between">
 				<a
 					href="/"
-					class="hover:bg-white hover:text-purple-600 px-4 py-2 rounded transition-transform transform hover:scale-105 hover:shadow-md duration-300"
+					class="px-4 py-2 rounded transition-transform transform hover:scale-105 hover:shadow-md duration-300"
 				>
 					CHAINGE
 				</a>
@@ -18,7 +42,7 @@
 					{#each siteMap as page}
 						<a
 							href={page.link}
-							class="hover:bg-white hover:text-purple-600 px-4 py-2 rounded transition-transform transform hover:scale-105 hover:shadow-md duration-300"
+							class="px-4 py-2 rounded transition-transform transform hover:scale-105 hover:shadow-md duration-300"
 						>
 							{page.name}
 						</a>
