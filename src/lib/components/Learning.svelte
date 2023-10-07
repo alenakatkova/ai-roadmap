@@ -20,6 +20,30 @@
 			// tags: [],
 			// description: ''
 		},
+        // {
+		// 	id: 3,
+		// 	// image: img1, // Image placeholder
+		// 	title: 'AI and Global Challenges',
+		// 	// tags: [],
+		// 	// description: ''
+		// },
+	];
+
+    const learningsFiltered = [
+		{
+			id: 1,
+			// image: img1, // Image placeholder
+			title: 'AI Strategy Workshops',
+			// tags: [],
+			// description: ''
+		},
+		{
+			id: 2,
+			// image: img1, // Image placeholder
+			title: 'Collaborative Learning',
+			// tags: [],
+			// description: ''
+		},
         {
 			id: 3,
 			// image: img1, // Image placeholder
@@ -31,7 +55,7 @@
 </script>
 
 <!-- <div class="grid grid-cols-1 gap-6"> -->
-    <div class="flex flex-col space-y-6 mr-4">
+    <div class="flex flex-col space-y-4">
     <h2 class="text-l font-medium">Learning</h2>
 	{#each learnings as learning (learning.id)}
 		<a

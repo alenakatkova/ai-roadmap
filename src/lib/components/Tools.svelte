@@ -20,6 +20,46 @@
 			// tags: [],
 			// description: ''
 		},
+        // {
+		// 	id: 3,
+		// 	// image: img1, // Image placeholder
+		// 	title: 'Unlock the Secrets of Generosity with AI-powered Analytics',
+		// 	// tags: [],
+		// 	// description: ''
+		// },
+        // {
+		// 	id: 4,
+		// 	// image: img1, // Image placeholder
+		// 	title: 'ChatGPT',
+		// 	// tags: [],
+		// 	// description: ''
+		// },
+        // {
+		// 	id: 5,
+		// 	// image: img1, // Image placeholder
+		// 	title: 'MidJourney',
+		// 	// tags: [],
+		// 	// description: ''
+		// },
+        
+	];
+
+
+    const toolsFiltered = [
+		{
+			id: 1,
+			// image: img1, // Image placeholder
+			title: 'Create your Custom Solutions Database for Donor Management',
+			// tags: [],
+			// description: ''
+		},
+		{
+			id: 2,
+			// image: img1, // Image placeholder
+			title: 'Reach the right people with what you do',
+			// tags: [],
+			// description: ''
+		},
         {
 			id: 3,
 			// image: img1, // Image placeholder
@@ -46,7 +86,7 @@
 </script>
 
 <!-- <div class="grid grid-cols-1 gap-6 mr-4"> -->
-    <div class="flex flex-col space-y-6 mr-4">
+    <div class="flex flex-col space-y-4 mr-4">
     <h2 class="text-l font-medium">Tools</h2>
 	{#each tools as tool (tool.id)}
 		<a

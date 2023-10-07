@@ -5,7 +5,7 @@
 
 <div>
 	<nav class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white shadow-md">
-		<div class="container mx-auto p-4">
+		<div class="container mx-auto p-2">
 			<div class="flex justify-between">
 				<a
 					href="/"

@@ -22,6 +22,57 @@
 			description:
 				'Generative AI now assists in seamless communication with donors globally by instantly drafting responses in multiple languages.'
 		},
+		// {
+		// 	id: 3,
+		// 	image: img3, // Image placeholder
+		// 	title: 'Generating Visual Content: AI-Powered Graphic Design',
+		// 	tags: ['VisualContent', 'Design', 'GenerativeAI'],
+		// 	description:
+		// 		'From infographics to event posters, AI now crafts engaging visuals tailored for philanthropic campaigns, reducing the need for professional designers.'
+		// },
+		// {
+		// 	id: 4,
+		// 	image: img4, // Image placeholder
+		// 	title: 'AI Helped Me Optimize Volunteer Allocation',
+		// 	tags: ['VolunteerManagement', 'Optimization', 'GenerativeAI'],
+		// 	description:
+		// 		"With AI's assistance, we were able to allocate volunteers to tasks that best matched their skills and availability, maximizing our on-ground impact."
+		// },
+		// {
+		// 	id: 5,
+		// 	image: img5, // Image placeholder
+		// 	title: 'AI Helped Me Craft Personalized Stories for Outreach',
+		// 	tags: ['Storytelling', 'Engagement', 'GenerativeAI'],
+		// 	description:
+		// 		"Using generative AI, I've been able to produce touching and tailored narratives for each community we engage with, enhancing connection and understanding."
+		// },
+		// {
+		// 	id: 6,
+		// 	image: img6, // Image placeholder
+		// 	title: 'Creating Virtual Training Scenarios with AI',
+		// 	tags: ['Training', 'Simulation', 'GenerativeAI'],
+		// 	description:
+		// 		"Generative AI has allowed us to simulate real-life training scenarios for our volunteers, ensuring they're well-prepared for the challenges they'll face in the field."
+		// }
+	];
+
+	const successStoriesFiltered = [
+		{
+			id: 1,
+			image: img1, // Image placeholder
+			title: 'AI Streamlines Paperwork: Crafting Doc Drafts Made Easy',
+			tags: ['DocumentAutomation', 'Efficiency', 'GenerativeAI'],
+			description:
+				'By leveraging generative AI, administrative tasks such as creating document drafts have become a breeze, reducing manual effort and errors.'
+		},
+		{
+			id: 2,
+			image: img2, // Image placeholder
+			title: 'Bridging Donor Communications: Multilingual AI Magic',
+			tags: ['DonorEngagement', 'Multilingual', 'Communication'],
+			description:
+				'Generative AI now assists in seamless communication with donors globally by instantly drafting responses in multiple languages.'
+		},
 		{
 			id: 3,
 			image: img3, // Image placeholder
@@ -59,7 +110,7 @@
 
 
 <!-- <div class="grid grid-cols-1 gap-4 mr-4"> -->
-	<div class="flex flex-col space-y-6 mr-4">
+	<div class="flex flex-col space-y-4 mr-4">
 	<h2 class="text-l font-medium">Success stories</h2>
 	{#each successStories as story (story.id)}
 		<a
