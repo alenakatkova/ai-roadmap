@@ -1,8 +1,8 @@
 export const siteMap = [
-	{
-		name: 'Home',
-		link: '/'
-	},
+	// {
+	// 	name: 'Home',
+	// 	link: '/'
+	// },
 	// {
 	//     name: 'AI Basics',
 	//     link: '/ai-basics'

@@ -7,8 +7,8 @@
 
 	function handleCheckboxChange() {
 		dispatch('filtersChanged', {
-      filters: selectedFilters,
-    });
+			filters: selectedFilters
+		});
 	}
 
 	function resetFilters() {
@@ -30,7 +30,13 @@
 								{#each option.options as subOption}
 									<li>
 										<label class="flex items-center space-x-2">
-											<input type="checkbox" bind:group={selectedFilters} class="form-checkbox text-blue-500 h-5 w-5" value={subOption.value} on:change={handleCheckboxChange} />
+											<input
+												type="checkbox"
+												bind:group={selectedFilters}
+												class="form-checkbox text-blue-500 h-5 w-5"
+												value={subOption.value}
+												on:change={handleCheckboxChange}
+											/>
 											<span>{subOption.name}</span>
 										</label>
 									</li>
@@ -40,7 +46,13 @@
 					{:else}
 						<li class="mb-2">
 							<label class="flex items-center space-x-2">
-								<input type="checkbox" bind:group={selectedFilters} class="form-checkbox text-blue-500 h-5 w-5" value={option.value} on:change={handleCheckboxChange} />
+								<input
+									type="checkbox"
+									bind:group={selectedFilters}
+									class="form-checkbox text-blue-500 h-5 w-5"
+									value={option.value}
+									on:change={handleCheckboxChange}
+								/>
 								<span>{option.name}</span>
 							</label>
 						</li>
@@ -49,7 +61,11 @@
 			</ul>
 		</div>
 	{/each}
-	<button type="button" on:click={resetFilters} class="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-700 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-800">
+	<button
+		type="button"
+		on:click={resetFilters}
+		class="py-2 px-4 bg-red-500 text-white rounded hover:bg-red-700 focus:outline-none focus:border-red-700 focus:shadow-outline-red active:bg-red-800"
+	>
 		Reset Filters
 	</button>
 </form>

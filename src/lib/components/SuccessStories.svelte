@@ -57,9 +57,26 @@
 	];
 </script>
 
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+<!-- <div class="grid grid-cols-1 gap-4 mr-4"> -->
+	<div class="flex flex-col space-y-6 mr-4">
+	<h2 class="text-l font-medium">Success stories</h2>
 	{#each successStories as story (story.id)}
 		<a
+			href="/success-stories/ai-streamlines-paperwork"
+			class="pl-2 flex items-center h-28 transition-transform transform hover:scale-105 border rounded-lg overflow-hidden shadow-md bg-white hover:shadow-lg cursor-pointer"
+		>
+			<!-- Image on the left -->
+			<img class="w-24 h-24 object-cover" src={story.image} alt={story.title} />
+
+			<!-- Title on the right -->
+			<div class="p-4 flex-1">
+				<h2 class="text-m">{story.title}</h2>
+			</div>
+		</a>
+	{/each}
+</div>
+<!-- <a
 			href="/success-stories/ai-streamlines-paperwork"
 			class="transition-transform transform hover:scale-105 border rounded-lg overflow-hidden shadow-md bg-white hover:shadow-lg cursor-pointer"
 		>
@@ -74,8 +91,6 @@
 						>
 					{/each}
 				</div>
-				<p class="text-gray-700">{story.description}</p>
+				<p class="text-gray-700">{story.description}</p> 
 			</div>
-		</a>
-	{/each}
-</div>
+		</a> -->
