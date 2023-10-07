@@ -1,9 +1,9 @@
 <script>
-	import TellAboutYourselfForm from '../lib/components/TellAboutYourselfForm.svelte';
-	import SuccessStories from '../lib/components/SuccessStories.svelte';
-	import Tools from '../lib/components/Tools.svelte';
-	import Learning from '../lib/components/Learning.svelte';
-
+	import TellAboutYourselfForm from '$lib/components/TellAboutYourselfForm.svelte';
+	import SuccessStories from '$lib/components/SuccessStories.svelte';
+	import Tools from '$lib/components/Tools.svelte';
+	import Learning from '$lib/components/Learning.svelte';
+import song from "$lib/assets/song.mp3"
 	let isDescriptionSubmitted = false;
 	function handleDescriptionSubmit(event) {
 		isDescriptionSubmitted = true;
@@ -15,12 +15,16 @@
 	<!-- Left Column (Text) -->
 	<div class="flex-1">
 		<h1 class="text-2xl font-bold mb-4">AI Empowerment for Philanthropy</h1>
-		<p class="text-gray-700">
+		<p class="text-gray-700 mb-8">
 			Discover the transformative potential of AI through our specialized tutorials, exclusively tailored for the philanthropic sector. With a personalized learning roadmap crafted to address your unique challenges and tasks, we guide you step-by-step. 
 		</p>
-		<p class="text-gray-700 mt-4">
+		<!-- <p class="text-gray-700 mt-4">
 			Harness AI to streamline processes, amplify your impact, and transform your organization's operations. Begin your enlightening journey with us today.
-		</p>
+		</p> -->
+		<audio controls>
+			<source src={song} type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
 	</div>
 
 	<!-- Right Column (Video) -->
