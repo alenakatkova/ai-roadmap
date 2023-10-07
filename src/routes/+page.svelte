@@ -14,15 +14,12 @@
 <div class="flex">
 	<!-- Left Column (Text) -->
 	<div class="flex-1">
-		<h1 class="text-2xl font-bold mb-4">Your Title Here</h1>
+		<h1 class="text-2xl font-bold mb-4">AI Empowerment for Philanthropy</h1>
 		<p class="text-gray-700">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
-			vestibulum. Donec in efficitur leo. Pellentesque habitant morbi tristique senectus et netus et
-			malesuada fames ac turpis egestas.
+			Discover the transformative potential of AI through our specialized tutorials, exclusively tailored for the philanthropic sector. With a personalized learning roadmap crafted to address your unique challenges and tasks, we guide you step-by-step. 
 		</p>
 		<p class="text-gray-700 mt-4">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
-			vestibulum.
+			Harness AI to streamline processes, amplify your impact, and transform your organization's operations. Begin your enlightening journey with us today.
 		</p>
 	</div>
 
@@ -30,7 +27,7 @@
 	<div class="flex-1 p-4">
 		<iframe
 			width="500"
-			height="200"
+			height="250"
 			src="https://www.youtube.com/embed/Kf319Gh2voc?si=_4gngCLG4pRR5FBT"
 			title="YouTube video player"
 			frameborder="0"
