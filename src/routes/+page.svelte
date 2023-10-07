@@ -51,7 +51,7 @@
 {#if isDescriptionSubmitted}
 	<div class="flex justify-end mt-2">
 		<a
-			href="/roadmap"
+			href="/personalized-roadmap"
 			class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
 		>
 			Go to your personalized roadmap

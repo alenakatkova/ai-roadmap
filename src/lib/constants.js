@@ -8,17 +8,18 @@ export const siteMap = [
 	//     link: '/ai-basics'
 	// },
 	{
-		name: 'Roadmap',
+		name: 'Full Roadmap',
 		link: '/roadmap'
 	},
 	{
-		name: 'Need Help?',
-		link: '/need-help'
+		name: 'Contribute',
+		link: '/contribute'
 	},
 	{
-		name: 'Want to Contribute?',
-		link: '/want-to-contribute'
-	}
+		name: 'About Us',
+		link: '/about-us'
+	},
+	
 	// {
 	//     name: 'AI Ethics',
 	//     link: '/ai-ethics'

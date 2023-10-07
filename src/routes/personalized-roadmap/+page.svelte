@@ -2,4 +2,4 @@
     import MultiLevelFlowChart from "$lib/components/MultiLevelFlowChart.svelte";
 </script>
 
-<MultiLevelFlowChart isPersonalized={false} />
+<MultiLevelFlowChart isPersonalized={true} />
