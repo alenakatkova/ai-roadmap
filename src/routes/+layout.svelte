@@ -29,8 +29,8 @@ import logo from "$lib/images/logo.png";
 	}
 </style>
 
-<div>
-	<nav class="bg-white text-purple-600 shadow-md">
+<div class="flex flex-col h-screen">
+	<nav class="bg-white shadow-md">
 		<div class="container mx-auto p-2">
 			<div class="flex justify-between">
 				<!-- <a
@@ -62,7 +62,7 @@ import logo from "$lib/images/logo.png";
 		</div>
 	</nav>
 
-	<main class="container mx-auto p-4 mt-6">
+	<main class="container mx-auto p-4 mt-6 flex-grow">
 		<slot />
 	</main>
 </div>
@@ -76,7 +76,7 @@ import logo from "$lib/images/logo.png";
 				>
 					&times;
 				</button>
-				<img src={logo} width="700px" alt="Big CHAINGE logo" />
+				<img src={logo} width="1100px" alt="Big CHAINGE logo" />
 			</div>
 		</div>
 	{/if}
